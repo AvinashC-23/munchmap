@@ -1,0 +1,22 @@
+[
+    {
+        "id":"1",
+        "type":"offer",
+        "text":"Buy Premium now and get upto 50% discount on yearly plan purchase"
+    },
+    {
+        "id":"2",
+        "type":"offer",
+        "text":"Buy Premium now and get upto 40% discount on yearly plan purchase"
+    },
+    {
+        "id":"3",
+        "type":"offer",
+        "text":"Buy Premium now and get upto 30% discount on yearly plan purchase"
+    },
+    {
+        "id":"4",
+        "type":"offer",
+        "text":"Buy Premium now and get upto 20% discount on yearly plan purchase"
+    }
+]
