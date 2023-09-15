@@ -1,7 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {QueryClientProvider, QueryClient} from "react-query"
+import {ReactQueryDevtools} from "react-query/devtools"
+
 import './App.css';
+// import Popular from './components/Popular';
 import Popular from './components/Popular';
 import Favorites from "./containers/Favorites"
 import Home from "./containers/Home"
@@ -25,6 +28,7 @@ function App() {
   return (
     <>
     <QueryClientProvider client={queryClient}>
+
       <h1>MUNCH MAP</h1>
       <Popular/>
       {/* <PopularRQ/> */}
@@ -36,7 +40,8 @@ function App() {
           <Route path="account" element={<Account/>}></Route>
         </Routes>
       </Router>
-      </QueryClientProvider>
+    <ReactQueryDevtools initialIsOpen={false} position='bottom-left'/>
+    </QueryClientProvider>
     </>
     
 

@@ -54,7 +54,7 @@ function Popular() {
                   <img src={recipe.image} alt='hi'></img>
                 </div>
 
-                <div className='recipeThumbnail'>
+                <div className='recipeThumbnail' onClick={console.log("recipe ",recipe.id)}>
                   <div className="detailDisplay">
                     <>
                       <i class="fa-regular fa-heart" ></i>

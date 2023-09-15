@@ -48,7 +48,6 @@ function PopularRQ() {
   // console.log(data)
   useEffect(() => {
    refetch()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[refetch]); 
 
   if (isLoading) {
@@ -73,14 +72,14 @@ function PopularRQ() {
       {data.data.recipes.map(recipe => {
         // if(recipe.aggregateLikes > 1000)
         return (
-          <SplideSlide key={recipe.id}>
+          <SplideSlide key={recipe.id} >
             <div className='recipeCard'>
 
               <div className='imageHolder'>
                 <img src={recipe.image} alt='hi'></img>
               </div>
 
-              <div className='recipeThumbnail'>
+              <div className='recipeThumbnail'onClick={console.log("recipe ",recipe.id)}>
                 <div className="detailDisplay">
                   <>
                     <i class="fa-regular fa-heart" ></i>
